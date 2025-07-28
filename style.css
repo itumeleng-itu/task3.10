@@ -32,12 +32,13 @@ body {
             list-style-type: none;
             margin: 5px;
             padding: 0;
-            li {
+            li a{
                 font-weight: bold;
                 color: rgb(2, 81, 15);
                 font-size: large;
                 transition: 0.3s;
                 padding: 8px 12px;
+                text-decoration: none;
             }
             li:hover {
                 border-top: 2px solid white;
@@ -101,26 +102,18 @@ body {
         padding: 25px;
         color: rgb(2, 81, 15);
         margin-top: 40px;
-        .footer-top, .footer-bottom {
+        .footer-top {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             padding: 10px 0;
-        }
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            margin-top: 15px;
-            padding-top: 20px;
-            .social-icons span {
-                margin: 0 8px;
-                cursor: pointer;
-                font-size: 20px;
-                transition: transform 0.3s;
-            }
-            .social-icons span:hover {
-                transform: scale(1.2);
+            a{
+                text-decoration: none;
+                color: rgb(2, 81, 15);
+                font-weight: bold;
             }
         }
+        
     }
 }
 .container:hover{
